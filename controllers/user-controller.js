@@ -1,4 +1,4 @@
-const { User } = require('../models');
+const { User, Comment } = require('../models');
 
 const userController = {
     // GET all users /api/users
@@ -64,7 +64,11 @@ const userController = {
                 res.status(404).json({ message: 'No user found with this id!' });
                 return;
             }
-            res.json(dbUserData);
+
+            res.json({
+                message: "User updated",
+                data: dbUserData
+            });
         })
         .catch(err => res.status(400).json(err));
     },
@@ -72,14 +76,18 @@ const userController = {
     // NEED BONUS, DELETE ALL THOUGHTS WHEN USER IS DELETED
    // DELETE /api/users/:id
    // delete user by id
-    deleteUser({ params }, res) {
-        User.findOneAndDelete({ _id: params.id })
+    deleteUser(req, res) {
+        User.findByIdAndDelete(req.params.id)
         .then(dbUserData => {
             if (!dbUserData) {
                 res.status(404).json({ message: 'No user found with this id!' });
                 return;
             }
-            res.json(dbUserData);
+
+            res.json({
+                message: "User deleted",
+                data: dbUserData
+            });
         })
         .catch(err => res.status(400).json(err));
     },
@@ -98,7 +106,10 @@ const userController = {
                 return;
             }
 
-            res.json(dbUserData);
+            res.json({
+                message: "Friend deleted",
+                data: dbUserData
+            });
         })
         .catch(err => res.status(400).json(err));
     },
