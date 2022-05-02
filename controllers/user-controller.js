@@ -77,6 +77,7 @@ const userController = {
    // DELETE /api/users/:id
    // delete user by id
     deleteUser(req, res) {
+        // OLD User.findOneAndDelete({ _id: params.id })
         User.findByIdAndDelete(req.params.id)
         .then(dbUserData => {
             if (!dbUserData) {
