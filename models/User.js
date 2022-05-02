@@ -4,7 +4,7 @@ const Thought = require('./Thought');
 
 // create the schema for the model to create a new user
 const UserSchema = new Schema(
-   {
+    {
         username: {
             type: String,
             unique: true,
@@ -30,14 +30,14 @@ const UserSchema = new Schema(
                 ref: 'User'
             }
         ]
-   },
-   {
-      toJSON: {
-        virtuals: true
-      },
-      id: false
-      // remove the additional id field that mongoose adds
-   }
+    },
+    {
+        toJSON: {
+            virtuals: true
+        },
+        id: false
+        // remove the additional id field that mongoose adds
+    }
 );
 
 // Retrieves the length of the user's friends array
