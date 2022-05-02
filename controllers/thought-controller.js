@@ -65,7 +65,11 @@ const thoughtController = {
                 res.status(404).json({ message: 'No thought found with this id!' });
                 return;
             }
-            res.json(dbThoughtData);
+
+            res.json({
+                message: "Thought updated",
+                data: dbThoughtData
+            });
         })
         .catch(err => {
             console.log(err);
@@ -82,7 +86,11 @@ const thoughtController = {
                 res.status(404).json({ message: 'No thought found with this id!' });
                 return;
             }
-            res.json(dbThoughtData);
+
+            res.json({
+                message: "Thought deleted",
+                data: dbThoughtData
+            });
         })
         .catch(err => res.status(400).json(err));
     },
@@ -118,14 +126,15 @@ const thoughtController = {
             { new: true }
         )
         .then(dbThoughtData => {
-            console.log(dbThoughtData);
-
             if (!dbThoughtData) {
                 res.status(404).json({ message: 'No user found with this id!' });
                 return;
             }
 
-            res.json(dbThoughtData);
+            res.json({
+                message: "Reaction deleted",
+                data: dbThoughtData
+            });
         })
         .catch(err => {
             console.log(err);
