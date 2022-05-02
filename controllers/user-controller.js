@@ -1,4 +1,4 @@
-const User = require('..models');
+const { User } = require('../models');
 
 const userController = {
     // GET all users /api/users
@@ -6,11 +6,11 @@ const userController = {
         User.find({})
         .populate({
             path: 'thoughts',
-            select: '__v'
+            select: '-__v'
         })
         .populate({
             path: 'friends',
-            select: '__v'
+            select: '-__v'
         })
         .select('-__v')
         .then(dbUserData => res.json(dbUserData))
@@ -25,11 +25,11 @@ const userController = {
         User.findOne({ _id: params.id })
         .populate({
             path: 'thoughts',
-            select: '__v'
+            select: '-__v'
         })
         .populate({
             path: 'friends',
-            select: '__v'
+            select: '-__v'
         })
         .select('-__v')
         .then(dbUserData => {
@@ -115,3 +115,7 @@ const userController = {
         .catch(err => res.json(err));
     },
 }
+
+module.exports = userController;
+
+// connects to user-routes.js
