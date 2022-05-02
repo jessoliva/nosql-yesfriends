@@ -1,9 +1,14 @@
+// set up the API endpoints here
 const router = require('express').Router();
-const userRoutes = require('./user-routes');
-const thoughtRoutes = require('./thought-routes');
+const apiRoutes = require('./api');
 
-// adds prefix to routes created in user-routes.js and thought-routes.js
-router.use('/users', userRoutes);
-router.use('/thoughts', thoughtRoutes);
+// add prefix of `/api` to all of the api routes imported from the `api` directory
+router.use('/api', apiRoutes);
+
+router.use((req, res) => {
+  res.status(404).send('<h1>😝 404 Error!</h1>');
+});
 
 module.exports = router;
+
+// this file connects to server.js
