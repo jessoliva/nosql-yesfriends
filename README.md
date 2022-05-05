@@ -17,15 +17,17 @@ A social network API - share your thoughts, make friends, and react to thoughts.
 - [📰&nbsp; License](#license)
 
 ## 💻&nbsp; Technologies
-<p align="center">
+<div align="center">
 
-<a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/mongodb-black?style=flat-square&labelColor=black&logo=mongodb&logoColor=#47A248" /></a>&ensp;
+<a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/mongodb-black?style=flat-square&labelColor=black&logo=mongodb&logoColor=#47A248" /></a>
+&ensp;
 <a href="https://mongoosejs.com/"><img src="https://img.shields.io/badge/mongoose-730002?style=flat-square&labelColor=730002&logo=m&logoColor=#47A248" /></a>&ensp;
 <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/node.js-233056?style=flat-square&labelColor=233056&logo=node.js&logoColor=#339933" /></a>&ensp;
 <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&labelColor=white&logo=npm&logoColor=CB3837" /></a>&ensp;
 <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/express-white?style=flat-square&labelColor=black&logo=express&logoColor=#000000" /></a>&ensp;
 <a href="https://insomnia.rest/"><img src="https://img.shields.io/badge/insomnia-black?style=flat-square&labelColor=black&logo=insomnia&logoColor=4000BF" /></a>&ensp;
-</p>
+
+</div>
 
 ## ✨&nbsp; Description
 
