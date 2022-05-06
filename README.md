@@ -60,19 +60,6 @@ Next, open the repository you cloned in Visual Studio Code. In the terminal ente
 
     npm i
 
-MySQL Process:
-
-    mysql -u <username> -p
-- Enter password after entering command above.
-- Enter 'SOURCE db/schema.sql' to create database
-- Enter 'quit' to exit out of MySQL 
-
-Seed Database Process:
-
-    npm run seed
-- Navigate to the roof directory of the project
-- Run the above seed command to seed with test data
-
 ## 👩🏽‍💻&nbsp; Usage
 Test the application using Insomnia. To invoke the application, navigate to the root directory of the project and run the following command:
 
