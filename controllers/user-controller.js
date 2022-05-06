@@ -108,7 +108,7 @@ const userController = {
             }
 
             res.json({
-                message: "Friend deleted",
+                message: "Friend added",
                 data: dbUserData
             });
         })
