@@ -18,7 +18,6 @@ A social network API - share your thoughts, make friends, and react to thoughts.
 
 ## 💻&nbsp; Technologies
 <div align="center">
-
 <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/mongodb-black?style=flat-square&labelColor=black&logo=mongodb&logoColor=#47A248" /></a>
 &ensp;
 <a href="https://mongoosejs.com/"><img src="https://img.shields.io/badge/mongoose-730002?style=flat-square&labelColor=730002&logo=m&logoColor=#47A248" /></a>&ensp;
@@ -26,7 +25,6 @@ A social network API - share your thoughts, make friends, and react to thoughts.
 <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&labelColor=white&logo=npm&logoColor=CB3837" /></a>&ensp;
 <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/express-white?style=flat-square&labelColor=black&logo=express&logoColor=#000000" /></a>&ensp;
 <a href="https://insomnia.rest/"><img src="https://img.shields.io/badge/insomnia-black?style=flat-square&labelColor=black&logo=insomnia&logoColor=4000BF" /></a>&ensp;
-
 </div>
 
 ## ✨&nbsp; Description
@@ -80,7 +78,7 @@ Test the application using Insomnia. To invoke the application, navigate to the 
 
     npm start
 
-✨ Checkout the [walk-through video](https://drive.google.com/file/d/1-_azyN1IbNZO9dvEtq5hhYy7eYpxo50v/view?usp=sharing) </br>
+✨ Checkout the [walk-through video](https://drive.google.com/file/d/1u7iVMKdm6FPXX4qsFKwcXeJ0M-hZgysM/view?usp=sharing) </br>
 Also located in: assets/walk-through.mov
 
 ## ✏️&nbsp; Contribution Guidelines
